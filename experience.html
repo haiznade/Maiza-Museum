@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experiences</title>
+    <link rel="icon" type="image/png" href="camera.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="experience-page">
+
+    <!-- VISITOR REGISTRATION POPUP -->
+    <div class="visitor-registration" id="visitorRegistration">
+
+        <div class="registration-card">
+
+            <span class="registration-flower">✿</span>
+
+            <p class="registration-label">A LITTLE PLACE TO CALL YOURS</p>
+
+            <h2>Welcome to my museum ♡</h2>
+
+            <p class="registration-description">
+                Before you explore my little world,
+                may I know your name?
+            </p>
+
+            <form id="visitorForm">
+
+                <input
+                    type="text"
+                    id="visitorName"
+                    placeholder="Enter your name here..."
+                    maxlength="30"
+                    autocomplete="given-name"
+                    required
+                >
+
+                <button type="submit">
+                    ENTER THE MUSEUM ↗
+                </button>
+
+            </form>
+
+            <small>Thank you for visiting Maiza's Little Museum.</small>
+
+        </div>
+
+    </div>
+
+    <!-- HEADER -->
+    <header class="experience-header">
+
+        <p class="museum-label">EXHIBITION 03</p>
+
+        <h1>Maiza's Little Museum</h1>
+
+        <p>A little collection of my life and memories</p>
+
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="experience-nav">
+
+        <a href="index.html">Home</a>
+        <a href="background.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html" class="active">Experiences</a>
+        <a href="gallery.html">Gallery</a>
+
+    </nav>
+
+    <main class="experience-main">
+
+        <!-- PAGE INTRODUCTION -->
+        <section class="experience-banner">
+
+            <p class="experience-label">EXHIBITION 03 · MY EXPERIENCES</p>
+
+            <h2>My Experiences & Memories ♡</h2>
+
+            <p>
+                A collection of opportunities, lessons and little
+                achievements along the way.
+            </p>
+
+            <div class="experience-decoration">
+                ✧ ───── ♡ ───── ✧
+            </div>
+
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="experience-intro">
+
+            <p class="experience-label">BEHIND THE MEMORIES</p>
+
+            <p>
+                Welcome to my experience collection! This exhibition
+                showcases some of the activities, responsibilities and
+                practical experiences that have contributed to my
+                personal growth. Every experience has taught me
+                something valuable and helped me become more confident.
+            </p>
+
+            <p>
+                ♡ Take a look at the little chapters of my experiences! ♡
+            </p>
+
+        </section>
+
+        <!-- SECTION 1: INTERNSHIP -->
+        <div class="experience-section-heading">
+
+            <p class="experience-label">COLLECTION 01</p>
+
+            <h2>Internship Experience ✿</h2>
+
+            <p>First step into the working environment</p>
+
+        </div>
+
+        <section class="internship-card">
+
+            <div class="internship-photo">
+
+                <img src="internn.jpg"
+                     alt="Internship experience"
+                     onclick="openPhoto(event, this)">
+
+                <p class="photo-caption-small">
+                    A chapter worth remembering ♡
+                </p>
+
+            </div>
+
+            <div class="internship-info">
+
+                <span class="small-label">WORKPLACE EXPERIENCE</span>
+
+                <h3>Internship at Pejabat Pendidikan Daerah Lundu</h3>
+
+                <span class="date-label">
+                    July – September 2026
+                </span>
+
+                <p>
+                    I had the opportunity to complete my industrial
+                    training at Pejabat Pendidikan Daerah, Lundu.
+                    This experience allowed me to explore a professional
+                    working environment and apply some of the knowledge
+                    I gained during my studies.
+                </p>
+
+                <p>
+                    I was also exposed to different tasks, teamwork,
+                    communication and the use of digital tools.
+                    It was a meaningful experience that helped me
+                    develop my confidence and practical skills.
+                </p>
+
+                <p class="internship-signature">
+                    ✧ A meaningful chapter in my journey.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- SECTION 2: PROJECTS AND ACTIVITIES -->
+        <div class="experience-section-heading">
+
+            <p class="experience-label">COLLECTION 02</p>
+
+            <h2>Projects & Activities ✧</h2>
+
+            <p>Little projects and creative things I've worked on</p>
+
+        </div>
+
+        <section class="experience-grid">
+
+            <div class="memory-card" onclick="openStory('project1')">
+
+                <div class="memory-photo">
+
+                    <img src="images/experience2.jpg"
+                         alt="My project and creative work"
+                         onclick="openPhoto(event, this)">
+
+                    <span class="photo-number">01</span>
+
+                </div>
+
+                <div class="memory-card-info">
+
+                    <span class="small-label">CREATIVE COLLECTION</span>
+
+                    <h3>Creative Projects</h3>
+
+                    <p>
+                        A collection of creative projects and tasks
+                        that allowed me to explore new ideas.
+                    </p>
+
+                    <span class="read-more">Explore Project ♡</span>
+
+                </div>
+
+            </div>
+
+            <div class="memory-card" onclick="openStory('project2')">
+
+                <div class="memory-photo">
+
+                    <img src="images/experience3.jpg"
+                         alt="My digital activities"
+                         onclick="openPhoto(event, this)">
+
+                    <span class="photo-number">02</span>
+
+                </div>
+
+                <div class="memory-card-info">
+
+                    <span class="small-label">DIGITAL COLLECTION</span>
+
+                    <h3>Digital Activities</h3>
+
+                    <p>
+                        Exploring digital tools and creating useful
+                        materials for different activities.
+                    </p>
+
+                    <span class="read-more">Explore Activity ♡</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SECTION 3: EVENTS AND PARTICIPATION -->
+        <div class="experience-section-heading">
+
+            <p class="experience-label">COLLECTION 03</p>
+
+            <h2>Events & Participation ♡</h2>
+
+            <p>Moments of participation, teamwork and learning</p>
+
+        </div>
+
+        <section class="experience-grid">
+
+            <div class="memory-card" onclick="openStory('event1')">
+
+                <div class="memory-photo">
+
+                    <img src="program.jpg"
+                         alt="Workshop and event participation"
+                         onclick="openPhoto(event, this)">
+
+                    <span class="photo-number">03</span>
+
+                </div>
+
+                <div class="memory-card-info">
+
+                    <span class="small-label">EVENT COLLECTION</span>
+
+                    <h3>Workshops & Programmes</h3>
+
+                    <p>
+                        Participating in workshops and programmes
+                        that introduced me to new knowledge and ideas.
+                    </p>
+
+                    <span class="read-more">View Experience ♡</span>
+
+                </div>
+
+            </div>
+
+            <div class="memory-card" onclick="openStory('event2')">
+
+                <div class="memory-photo">
+
+                    <img src="ftesmadani.jpg"
+                         alt="Teamwork and event activities"
+                         onclick="openPhoto(event, this)">
+
+                    <span class="photo-number">04</span>
+
+                </div>
+
+                <div class="memory-card-info">
+
+                    <span class="small-label">PARTICIPATION COLLECTION</span>
+
+                    <h3>Teamwork & Activities</h3>
+
+                    <p>
+                        Learning to communicate, cooperate and
+                        contribute through group activities.
+                    </p>
+
+                    <span class="read-more">View Experience ♡</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SECTION 4: SKILLS -->
+        <div class="experience-section-heading">
+
+            <p class="experience-label">COLLECTION 04</p>
+
+            <h2>Skills I've Gained ✿</h2>
+
+            <p>Little things that help me grow</p>
+
+        </div>
+
+        <section class="skills-container">
+
+            <p class="experience-label">MY PERSONAL COLLECTION</p>
+
+            <h3>Skills & Things I've Learned</h3>
+
+            <p>
+                Throughout my experiences, I have developed
+                and improved the following skills:
+            </p>
+
+            <div class="skills-list">
+
+                <span class="skill">Communication</span>
+                <span class="skill">Teamwork</span>
+                <span class="skill">Time Management</span>
+                <span class="skill">Problem Solving</span>
+                <span class="skill">Creativity</span>
+                <span class="skill">Adaptability</span>
+                <span class="skill">Canva</span>
+                <span class="skill">Google Forms</span>
+                <span class="skill">Microsoft Office</span>
+                <span class="skill">Organisation</span>
+
+            </div>
+
+        </section>
+
+        <!-- CLOSING NOTE -->
+        <section class="ending-note">
+
+            <p class="experience-label">A LITTLE REFLECTION</p>
+
+            <h2>✧ Every Experience Matters ✧</h2>
+
+            <p>
+                Every opportunity has given me a chance to learn,
+                improve and discover something new about myself.
+                I believe that even the smallest experiences can
+                become meaningful lessons for the future.
+            </p>
+
+            <p class="ending-signature">
+                Thank you for exploring my experience collection! ♡
+            </p>
+
+        </section>
+
+        <!-- BACK TO HOME -->
+        <div class="experience-back">
+
+            <a href="index.html">← BACK TO HOME </a>
+
+        </div>
+
+    </main>
+
+    <!-- PROJECT STORY POP-UPS -->
+    <div class="story-viewer" id="project1"
+         onclick="closeStory(event)">
+
+        <div class="story-paper">
+
+            <button class="story-close"
+                    onclick="closeStory(event)">&times;</button>
+
+            <p class="small-label">✧ PROJECT COLLECTION ✧</p>
+
+            <h2>Creative Projects</h2>
+
+            <p>
+                This section represents the creative projects
+                and activities I have worked on. Through these
+                experiences, I had opportunities to organise
+                information, develop ideas and present my work
+                in a creative way.
+            </p>
+
+            <p>
+                I enjoy exploring different ways to make
+                information more interesting and visually appealing.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="story-viewer" id="project2"
+         onclick="closeStory(event)">
+
+        <div class="story-paper">
+
+            <button class="story-close"
+                    onclick="closeStory(event)">&times;</button>
+
+            <p class="small-label">✧ DIGITAL COLLECTION ✧</p>
+
+            <h2>Digital Activities</h2>
+
+            <p>
+                I have explored digital tools to help organise
+                information, prepare materials and complete
+                different tasks.
+            </p>
+
+            <p>
+                These activities have helped me become more
+                familiar with digital applications and encouraged
+                me to improve my creativity and technical skills.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- EVENT STORY POP-UPS -->
+    <div class="story-viewer" id="event1"
+         onclick="closeStory(event)">
+
+        <div class="story-paper">
+
+            <button class="story-close"
+                    onclick="closeStory(event)">&times;</button>
+
+            <p class="small-label">✧ EVENT COLLECTION ✧</p>
+
+            <h2>Workshops & Programmes</h2>
+
+            <p>
+                Taking part in workshops and programmes has
+                given me opportunities to gain new knowledge,
+                explore different topics and learn from others.
+            </p>
+
+            <p>
+                These experiences remind me that learning
+                can happen beyond the classroom.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="story-viewer" id="event2"
+         onclick="closeStory(event)">
+
+        <div class="story-paper">
+
+            <button class="story-close"
+                    onclick="closeStory(event)">&times;</button>
+
+            <p class="small-label">✧ PARTICIPATION COLLECTION ✧</p>
+
+            <h2>Teamwork & Activities</h2>
+
+            <p>
+                Being involved in different activities has
+                taught me the importance of communication,
+                cooperation and responsibility.
+            </p>
+
+            <p>
+                I value the opportunity to work with others,
+                share ideas and learn from different experiences.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- ENLARGED PHOTO VIEWER -->
+    <div class="photo-viewer" id="photoViewer"
+         onclick="closePhoto(event)">
+
+        <div class="photo-frame">
+
+            <button class="photo-close"
+                    onclick="closePhoto(event)">&times;</button>
+
+            <img id="largePhoto"
+                 src=""
+                 alt="Enlarged experience photograph">
+
+            <p class="photo-caption" id="photoCaption"></p>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="experience-footer">
+
+         <span>୨୧</span>
+
+        <p>Collected with love, kept forever.</p>
+
+        <small>
+            © 2026 Maiza's Little Museum · Made by Haizum ♡
+        </small>
+        <br>
+        <small> This website was created to fulfil the requirements of IMD316 for the CDIM110 programme </small>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        // SESSION REGISTRATION CHECK
+
+        const registration =
+            document.getElementById("visitorRegistration");
+
+        const visitorForm =
+            document.getElementById("visitorForm");
+
+        const visitorInput =
+            document.getElementById("visitorName");
+
+        const savedName =
+            sessionStorage.getItem("maizaVisitorName");
+
+        if (savedName) {
+
+            registration.classList.add("hidden");
+
+        } else {
+
+            registration.classList.remove("hidden");
+
+            visitorInput.focus();
+
+        }
+
+        visitorForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const visitorName = visitorInput.value.trim();
+
+            if (visitorName === "") {
+                visitorInput.focus();
+                return;
+            }
+
+            sessionStorage.setItem(
+                "maizaVisitorName",
+                visitorName
+            );
+
+            registration.classList.add("hidden");
+
+        });
+
+
+        // OPEN STORY POP-UP
+
+        function openStory(storyID) {
+
+            document.getElementById(storyID)
+                .classList.add("active");
+
+            document.body.style.overflow = "hidden";
+
+        }
+
+
+        // CLOSE STORY POP-UP
+
+        function closeStory(event) {
+
+            if (
+                event.target.classList.contains("story-viewer") ||
+                event.target.classList.contains("story-close")
+            ) {
+
+                event.target.closest(".story-viewer")
+                    .classList.remove("active");
+
+                document.body.style.overflow = "";
+
+            }
+
+        }
+
+
+        // OPEN ENLARGED PHOTO
+
+        function openPhoto(event, photo) {
+
+            event.stopPropagation();
+
+            document.getElementById("largePhoto").src = photo.src;
+
+            document.getElementById("photoCaption").textContent =
+                photo.alt;
+
+            document.getElementById("photoViewer")
+                .classList.add("active");
+
+            document.body.style.overflow = "hidden";
+
+        }
+
+
+        // CLOSE PHOTO VIEWER
+
+        function closePhoto(event) {
+
+            if (
+                event.target.id === "photoViewer" ||
+                event.target.classList.contains("photo-close")
+            ) {
+
+                document.getElementById("photoViewer")
+                    .classList.remove("active");
+
+                document.body.style.overflow = "";
+
+            }
+
+        }
+
+
+        // CLOSE POP-UPS WITH ESCAPE KEY
+
+        document.addEventListener("keydown", function(event) {
+
+            if (event.key === "Escape") {
+
+                document.querySelectorAll(".story-viewer")
+                    .forEach(function(viewer) {
+                        viewer.classList.remove("active");
+                    });
+
+                document.getElementById("photoViewer")
+                    .classList.remove("active");
+
+                document.body.style.overflow = "";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
